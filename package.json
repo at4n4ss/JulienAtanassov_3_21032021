@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Project 3 with openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
+  },
+  "author": "julien atanassov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerkx/maintainable-css-with-sass/issues"
+  },
+  "homepage": "https://github.com/gerkx/maintainable-css-with-sass#readme"
+}
