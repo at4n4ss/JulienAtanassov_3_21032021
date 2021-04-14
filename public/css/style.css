@@ -1,27 +1,82 @@
-.container__btn a {
-  display: block;
-  width: 210px;
-  line-height: 50px;
-  text-align: center;
-  vertical-align: middle;
-  background-color: #ff79da;
-  color: white;
-  text-decoration: none;
-  margin-left: 100px;
-  border-radius: 20px;
+* {
+  font-family: "Roboto", cursive;
+  margin: 0;
+  padding: 0;
 }
 
-.container__menu__component {
-  display: block;
-  width: 350px;
-  line-height: 60px;
-  text-align: center;
-  vertical-align: middle;
-  background-color: whitesmoke;
-  color: black;
+.maincard__intro h2 {
+  font-family: "Shrikhand", cursive;
+}
+
+ul {
+  list-style: none;
+}
+
+.container_footer ul {
+  color: white;
+}
+
+.footer__logo h3 {
+  font-family: "Shrikhand", cursive;
+  color: white;
+}
+
+.container__menu__button h3 {
+  font-size: 14px;
+}
+
+.container__btn a {
+  color: white;
   text-decoration: none;
-  margin-left: 30px;
+  padding: 15px 35px 15px 35px;
   border-radius: 20px;
+  background: linear-gradient(#ff79da, #9356dc);
+}
+
+.container__column__card {
+  width: 90%;
+  height: 230px;
+  border-radius: 16px;
+  box-shadow: 0 0px 5px rgba(41, 30, 30, 0.3), 0 5px 5px rgba(0, 0, 0, 0.22);
+  margin-left: 18px;
+  margin-bottom: 20px;
+}
+
+.container__column {
+  background-color: whitesmoke;
+  padding-bottom: 20px;
+}
+
+.text_cards {
+  height: 30%;
+  padding: 10px;
+}
+
+.text_cards p {
+  margin: 0;
+}
+
+.text_cards h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.img_cards {
+  width: 100%;
+  height: 70%;
+}
+
+.img_cards img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.container__column_card_bottom {
+  display: flex;
 }
 
 .logo img {
@@ -32,38 +87,150 @@
 .logo {
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-left: 130px;
+  padding-left: 110px;
   text-align: center;
   width: 150px;
   height: 20px;
 }
 
+/*header*/
 .location {
   width: 100%;
   height: 30px;
   text-align: center;
-  background-color: lightgray;
+  background-color: whitesmoke;
 }
+.location .location__text {
+  box-shadow: 2px 2px 0px rgba(41, 30, 30, 0.3), 2px 5px 5px rgba(0, 0, 0, 0.22);
+  padding-top: 5px;
+}
+
+/* main */
 .container1 {
   width: 100%;
   text-align: center;
   background-color: whitesmoke;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   padding-top: 5px;
   margin-bottom: 50px;
 }
 .container1 .container__info {
   width: 70%;
   margin-left: 70px;
+  margin-bottom: 50px;
 }
 .container1 .container__info h3 {
   width: 90%;
-  font-size: 25px;
+  font-size: 23px;
 }
 .container1 .container__info h4 {
+  width: 115%;
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: normal;
+  margin-left: -32px;
+}
+
+/* restaurants */
+.container {
+  margin-top: 20px;
+}
+
+.container h4 {
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+.container__column h2 {
+  font-size: 20px;
+  padding: 50px 0px 20px 20px;
+}
+
+.maincard {
+  background-color: whitesmoke;
+  border-radius: 40px 40px 0 0;
+  padding-bottom: 50px;
+}
+
+.card_img {
   width: 100%;
-  color: gray;
-  margin-top: -12px;
+  height: 200px;
+  background-image: url(Ressources/Maquettes/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+
+.card_img img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.maincard__intro {
+  padding: 20px;
+}
+
+/* menu */
+.container__menu p {
+  border-bottom: 2px solid black;
+  margin-left: 10px;
+}
+
+.container__menu__component h3,
+h4 {
+  margin: 0px;
+}
+
+.container__menu__component h4 {
+  font-size: 15px;
+  font-weight: normal;
+  padding: 0;
+}
+
+.container__menu__component {
+  display: flex;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0 0px 5px rgba(41, 30, 30, 0.3), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.component__text h3 {
+  font-size: 15px;
+}
+
+.container_button {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+/* menu1 page */
+.container__menu__button {
+  display: flex;
+  width: 90%;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  color: black;
+  background-color: whitesmoke;
+  margin-left: 10px;
+  margin: 20px 10px 0 20px;
+  border-radius: 20px;
+}
+
+/* footer */
+.container_footer {
+  padding: 30px;
+  background-color: black;
+}
+
+.footer__column li {
+  padding: 5px 0 2px 0px;
 }
 
 body {

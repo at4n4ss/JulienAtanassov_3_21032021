@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
     <title>OhMyFood</title>
   </head>
 
   <body>
     <header>
       <div class="logo">
-        <img
-          src="/Ressources/Maquettes Ohmyfood/images/logo/ohmyfood.png"
-          alt=""
-        />
+        <img src="Ressources/Maquettes/images/logo/ohmyfood.png" alt="" />
       </div>
     </header>
     <main>
@@ -32,36 +31,106 @@
           </h4>
         </section>
         <section class="container__btn">
-          <h3>
-            <p>
-              <a href="#">Explorez nos réstaurants</a>
-            </p>
-          </h3>
+          <a href="#">Explorez nos réstaurants</a>
         </section>
       </div>
+
       <div class="container">
         <h4>Fonctionnement</h4>
         <section class="container__menu">
-          <article class="container__menu__component">
-            <h3>Choisissez un restaurant</h3>
+          <article class="container__menu__button">
+            <div class="icon">icone</div>
+            <div class="button__text">
+              <h3>Choisissez un restaurant</h3>
+            </div>
           </article>
-          <article class="container__menu__component">
+          <article class="container__menu__button">
             <h3>Composez votre menu</h3>
           </article>
-          <article class="container__menu__component">
+          <article class="container__menu__button">
             <h3>Dégustez au restaurant</h3>
           </article>
         </section>
       </div>
       <div class="container">
-        <section class="container__row">
-          <article class="container__row__card">La palette du goût</article>
-          <article class="container__row__card">La note enchantée</article>
-          <article class="container__row__card">A la francaise</article>
-          <article class="container__row__card">Le délice des sens</article>
+        <section class="container__column">
+          <h2>Restaurants</h2>
+          <article class="container__column__card">
+            <div class="img_cards">
+              <img
+                src="Ressources/Maquettes/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="container__column_card_bottom">
+              <div class="text_cards">
+                <h3>La palette du goût</h3>
+
+                <p>Ménillmontant</p>
+              </div>
+              <div class="card__bottom__button"></div>
+            </div>
+          </article>
+          <article class="container__column__card">
+            <div class="img_cards">
+              <img
+                src="Ressources/Maquettes/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="container__column_card_bottom">
+              <div class="text_cards">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+              </div>
+              <div class="card__bottom__button"></div>
+            </div>
+          </article>
+          <article class="container__column__card">
+            <div class="img_cards">
+              <img
+                src="Ressources/Maquettes/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="container__column_card_bottom">
+              <div class="text_cards">
+                <h3>A la francaise</h3>
+                <p>Cité Rouge</p>
+              </div>
+              <div class="card__bottom__button"></div>
+            </div>
+          </article>
+          <article class="container__column__card">
+            <div class="img_cards">
+              <img
+                src="Ressources/Maquettes/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="container__column_card_bottom">
+              <div class="text_cards">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+              </div>
+              <div class="card__bottom__button"></div>
+            </div>
+          </article>
         </section>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container_footer">
+        <div class="footer__logo"><h3>ohmyfood</h3> </div>
+        <div class="footer__column">
+          <ul>
+            <li>Proposer un restaurant</li>
+            <li>Devenir partenaire</li>
+            <li>Mentions légales</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+     
+    </footer>
   </body>
 </html>

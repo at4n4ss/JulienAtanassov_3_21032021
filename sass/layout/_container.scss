@@ -1,31 +1,137 @@
+/*header*/
+
 .location {
   width: 100%;
   height: 30px;
   text-align: center;
 
-  background-color: lightgray;
+  background-color: whitesmoke;
   .location__text {
+    box-shadow: 2px 2px 0px rgb(41 30 30 / 30%), 2px 5px 5px rgb(0 0 0 / 22%);
+    padding-top: 5px;
   }
 }
-
+/* main */
 .container1 {
   width: 100%;
   text-align: center;
   background-color: whitesmoke;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   padding-top: 5px;
   margin-bottom: 50px;
+
   .container__info {
     width: 70%;
     margin-left: 70px;
+    margin-bottom: 50px;
   }
   .container__info h3 {
     width: 90%;
-    font-size: 25px;
+    font-size: 23px;
   }
   .container__info h4 {
-    width: 100%;
-    color: gray;
-    margin-top: -12px;
+    width: 115%;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: normal;
+    margin-left: -32px;
   }
+}
+/* restaurants */
+.container {
+  margin-top: 20px;
+}
+.container h4 {
+  font-size: 20px;
+  padding-left: 15px;
+}
+.container__column h2 {
+  font-size: 20px;
+  padding: 50px 0px 20px 20px;
+}
+.maincard {
+  background-color: whitesmoke;
+  border-radius: 40px 40px 0 0;
+  padding-bottom: 50px;
+}
+
+.card_img {
+  width: 100%;
+  height: 200px;
+  background-image: url(Ressources/Maquettes/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+.card_img img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.maincard__intro {
+  padding: 20px;
+}
+
+/* menu */
+
+.container__menu p {
+  border-bottom: 2px solid black;
+  margin-left: 10px;
+}
+.container__menu__component h3,
+h4 {
+  margin: 0px;
+}
+.container__menu__component h4 {
+  font-size: 15px;
+  font-weight: normal;
+  padding: 0;
+}
+.container__menu__component {
+  display: flex;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0 0px 5px rgb(41 30 30 / 30%), 0 5px 5px rgb(0 0 0 / 22%);
+}
+.component__text h3 {
+  font-size: 15px;
+}
+.container_button {
+  background-color: whitesmoke;
+
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+/* menu1 page */
+.container_btn {
+}
+.container__menu__button {
+  display: flex;
+  width: 90%;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  color: black;
+  background-color: whitesmoke;
+  margin-left: 10px;
+  margin: 20px 10px 0 20px;
+  border-radius: 20px;
+}
+
+/* footer */
+
+.container_footer {
+  padding: 30px;
+  background-color: black;
+}
+.footer__logo {
+}
+.footer__column li {
+  padding: 5px 0 2px 0px;
 }
