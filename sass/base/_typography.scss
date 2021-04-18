@@ -1,9 +1,10 @@
 * {
-  font-family: "Roboto", cursive;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
-
+::placeholder {
+}
 .maincard__intro h2 {
   font-family: "Shrikhand", cursive;
 }
@@ -14,11 +15,16 @@ ul {
 .container_footer ul {
   color: white;
 }
+.container h4 {
+  font-weight: bolder;
+}
 .footer__logo h3 {
   font-family: "Shrikhand", cursive;
   color: white;
 }
-
+.logo h1 {
+  font-family: "Shrikhand", cursive;
+}
 .container__menu__button h3 {
   font-size: 14px;
 }

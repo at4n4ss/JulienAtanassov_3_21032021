@@ -1,15 +1,14 @@
 /*header*/
-
 .location {
-  width: 100%;
-  height: 30px;
-  text-align: center;
-
+  display: flex;
+  justify-content: center;
   background-color: whitesmoke;
-  .location__text {
-    box-shadow: 2px 2px 0px rgb(41 30 30 / 30%), 2px 5px 5px rgb(0 0 0 / 22%);
-    padding-top: 5px;
-  }
+  height: 30px;
+  padding-top: 10px;
+  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.location__text {
+  padding-left: 10px;
 }
 /* main */
 .container1 {
@@ -24,6 +23,7 @@
     width: 70%;
     margin-left: 70px;
     margin-bottom: 50px;
+    margin-top: 30px;
   }
   .container__info h3 {
     width: 90%;
@@ -49,34 +49,15 @@
   font-size: 20px;
   padding: 50px 0px 20px 20px;
 }
-.maincard {
-  background-color: whitesmoke;
-  border-radius: 40px 40px 0 0;
-  padding-bottom: 50px;
-}
-
-.card_img {
-  width: 100%;
-  height: 200px;
-  background-image: url(Ressources/Maquettes/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-}
-.card_img img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.maincard__intro {
-  padding: 20px;
-}
 
 /* menu */
-
-.container__menu p {
-  border-bottom: 2px solid black;
+.menu_underline {
+  width: 39px;
+  border-top: 2px solid #99e2d0;
+}
+.container__menu {
   margin-left: 10px;
+  margin-right: 10px;
 }
 .container__menu__component h3,
 h4 {
@@ -89,14 +70,26 @@ h4 {
 }
 .container__menu__component {
   display: flex;
-  width: 90%;
-  padding: 10px;
+
   margin-bottom: 10px;
   margin-top: 10px;
-  margin-left: 5px;
+
   border-radius: 16px;
   background-color: white;
   box-shadow: 0 0px 5px rgb(41 30 30 / 30%), 0 5px 5px rgb(0 0 0 / 22%);
+}
+.component__price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.component__text {
+  width: 88%;
+
+  padding: 10px;
 }
 .component__text h3 {
   font-size: 15px;
@@ -122,13 +115,14 @@ h4 {
   margin-left: 10px;
   margin: 20px 10px 0 20px;
   border-radius: 20px;
+  box-shadow: 0 0px 5px rgb(41 30 30 / 30%), 0 5px 5px rgb(0 0 0 / 22%);
 }
 
 /* footer */
 
 .container_footer {
   padding: 30px;
-  background-color: black;
+  background-color: #353535;
 }
 .footer__logo {
 }

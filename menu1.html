@@ -5,31 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="public/css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
     <title>OhMyFood</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="Ressources/Maquettes/images/logo/ohmyfood.png" alt="" />
+        <h1>ohmyfood</h1>
       </div>
     </header>
     <main>
-      <div class="card_img">aaa</div>
+      <div class="card_img"></div>
       <div class="maincard">
         <div class="maincard__intro">
-          <h2>A la francaise</h2>
+          <h2>À la française</h2>
         </div>
 
         <div class="container">
           <div class="container__menu">
-            <p>ENTREES</p>
+            <p>ENTRÉES</p>
+            <div class="menu_underline"></div>
             <div class="container__menu__component">
               <div class="component__text">
                 <h3>Tartare de poulpe acidulé</h3>
                 <h4>Aux zests d'orange</h4>
               </div>
-              <div class="component__button">aa</div>
+              <div class="component__price">
+20€
+              </div>
+              <div class="component__button">
+                <div class="button__icon">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
             </div>
             <div class="container__menu__component">
               <div class="component__text">
@@ -48,6 +60,7 @@
         <div class="container">
           <div class="container__menu">
             <p>PLATS</p>
+            <div class="menu_underline"></div>
             <div class="container__menu__component">
               <div class="component__text">
                 <h3>Coquilles Saint-Jacques</h3>
@@ -71,6 +84,7 @@
         <div class="container">
           <div class="container__menu">
             <p>DESSERTS</p>
+            <div class="menu_underline"></div>
             <div class="container__menu__component">
               <div class="component__text">
                 <h3>Pétales de violettes glacés</h3>
@@ -103,8 +117,8 @@
         <div class="footer__logo"><h3>ohmyfood</h3> </div>
         <div class="footer__column">
           <ul>
-            <li>Proposer un restaurant</li>
-            <li>Devenir partenaire</li>
+            <li><span class="icon_footer"><i class="fas fa-utensils"></i></span>Proposer un restaurant</li>
+            <li><span class="icon_footer2"><i class="fas fa-handshake"></i></span>Devenir partenaire</li>
             <li>Mentions légales</li>
             <li>Contact</li>
           </ul>

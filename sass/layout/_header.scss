@@ -1,12 +1,5 @@
-.logo img {
-  max-width: 100%;
-  height: auto;
-}
 .logo {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 110px;
-  text-align: center;
-  width: 150px;
-  height: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }

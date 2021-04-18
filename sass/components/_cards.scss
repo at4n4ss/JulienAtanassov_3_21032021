@@ -12,11 +12,17 @@
   padding-bottom: 20px;
 }
 .text_cards {
+  width: 80%;
   height: 30%;
   padding: 10px;
 }
 .text_cards p {
   margin: 0;
+}
+.card__bottom__button {
+  width: 5%;
+  text-align: end;
+  margin-top: 25px;
 }
 .text_cards h3 {
   margin-bottom: 0px;
@@ -37,4 +43,29 @@
 
 .container__column_card_bottom {
   display: flex;
+}
+
+.maincard {
+  background-color: whitesmoke;
+  border-radius: 40px 40px 0 0;
+  padding-bottom: 50px;
+}
+
+.maincard__intro {
+  margin-top: -50px;
+  padding: 20px;
+}
+.card_img {
+  width: 100%;
+  height: 250px;
+  background-image: url(intro.jpg);
+  background-color: #cccccc;
+  background-size: cover;
+}
+.card_img img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  max-height: 100%;
+  max-width: 100%;
 }
