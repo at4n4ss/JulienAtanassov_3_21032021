@@ -45,30 +45,31 @@
 
 .button__icon {
   color: #99e2d0;
-  width: 20px;
-  height: 20px;
-  border-radius: 100px;
+  display: flex;
+  width: 25px;
+
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  border-radius: 50px;
   background-color: white;
 }
 .component__button {
   display: flex;
 
   background-color: #99e2d0;
-  border-radius: 0px 20px 20px 0px;
-  width: 60px;
+  border-radius: 0px 15px 15px 0px;
+  width: 80px;
   height: 60px;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  transition-duration: 0.5s;
-  margin-right: 0px;
 }
 .logo_full {
   display: none;
   position: relative;
   bottom: 19px;
 
-  color: red;
+  color: linear-gradient(#ff79da, #9356dc);
 }
 
 .logo_empty:active .logo_full {

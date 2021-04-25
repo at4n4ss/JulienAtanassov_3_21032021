@@ -1,5 +1,17 @@
 .logo {
   display: flex;
-  width: 100%;
+  width: 73%;
+}
+header {
+  display: flex;
+}
+.return {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  width: 15%;
+  padding-right: 45px;
+}
+.return .fas {
+  font-size: 20px;
 }

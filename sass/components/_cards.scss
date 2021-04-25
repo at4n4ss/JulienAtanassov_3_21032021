@@ -69,3 +69,58 @@
   max-height: 100%;
   max-width: 100%;
 }
+
+.new {
+  position: absolute;
+  display: flex;
+  top: -140px;
+  padding: 6px;
+  color: green;
+  background-color: #99e2d0;
+  right: 25px;
+}
+.container__column_card_bottom {
+  position: relative;
+}
+/* animations cards menu */
+
+@keyframes fadein {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container__menu__component {
+  opacity: 1;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 0s;
+}
+.menu_delay_2 {
+  animation-delay: 0.1s;
+}
+.menu_delay_3 {
+  animation-delay: 0.2s;
+}
+.menu_delay_4 {
+  animation-delay: 0.3s;
+}
+
+.menu_delay_5 {
+  animation-delay: 0.4s;
+}
+.menu_delay_6 {
+  animation-delay: 0.5s;
+}
+.menu_delay_7 {
+  animation-delay: 0.6s;
+}
+.menu_delay_8 {
+  animation-delay: 0.7s;
+}
+.menu_delay_9 {
+  animation-delay: 0.8s;
+}
