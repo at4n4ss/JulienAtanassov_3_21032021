@@ -5,6 +5,10 @@
 }
 ::placeholder {
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 .maincard__intro h2 {
   font-family: "Shrikhand", cursive;
 }
@@ -14,6 +18,9 @@ ul {
 }
 .container_footer ul {
   color: white;
+}
+.component__text h3 {
+  font-size: 15px;
 }
 .container h4 {
   font-weight: bolder;

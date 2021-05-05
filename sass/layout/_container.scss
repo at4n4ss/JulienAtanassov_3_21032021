@@ -70,7 +70,9 @@ h4 {
 }
 .container__menu__component {
   display: flex;
-
+  justify-content: flex-end;
+  width: 99%;
+  height: 60px;
   margin-bottom: 10px;
   margin-top: 10px;
 
@@ -83,16 +85,21 @@ h4 {
   justify-content: flex-end;
   align-items: flex-end;
   padding: 14px;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .component__text {
+  display: block;
   width: 88%;
+  white-space: nowrap;
 
+  overflow: hidden;
   padding: 10px 10px 0px 10px;
 }
 .component__text h3 {
   font-size: 15px;
+}
+.component__text h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .container_button {
   background-color: whitesmoke;

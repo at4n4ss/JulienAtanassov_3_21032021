@@ -83,6 +83,11 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .maincard__intro h2 {
   font-family: "Shrikhand", cursive;
 }
@@ -93,6 +98,10 @@ ul {
 
 .container_footer ul {
   color: white;
+}
+
+.component__text h3 {
+  font-size: 15px;
 }
 
 .container h4 {
@@ -170,23 +179,54 @@ ul {
   height: 25px;
   border-radius: 50px;
   background-color: white;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
 }
 
 .component__button {
   display: flex;
   background-color: #99e2d0;
   border-radius: 0px 15px 15px 0px;
-  width: 80px;
+  width: 0px;
   height: 60px;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+
+.container__menu__component:hover .component__button {
+  animation: validbutton;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.container__menu__component:hover .button__icon {
+  transform: rotate(0);
+}
+
+@keyframes validbutton {
+  0% {
+    width: 0;
+    display: none;
+  }
+  100% {
+    width: 80px;
+    display: block;
+  }
+}
+.component__text .component__price .container__menu__component {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .logo_full {
   display: none;
   position: relative;
   bottom: 19px;
-  color: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(#ff79da, #9356dc);
 }
 
 .logo_empty:active .logo_full {
@@ -260,9 +300,14 @@ ul {
 .card_img {
   width: 100%;
   height: 250px;
-  background-image: url(intro.jpg);
   background-color: #cccccc;
   background-size: cover;
+}
+.card_img.menupic1 {
+  background-image: url(intro.jpg);
+}
+.card_img.menupic2 {
+  background-image: url(intro2.jpg);
 }
 
 .card_img img {
@@ -290,49 +335,47 @@ ul {
 /* animations cards menu */
 @keyframes fadein {
   0% {
-    transform: scale(0);
+    position: relative;
+    top: 10px;
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    position: relative;
+    top: 0px;
+    opacity: 1;
   }
 }
 .container__menu__component {
   opacity: 1;
   animation-name: fadein;
+  animation-duration: 1s;
+}
+.container__menu__component.delay1 {
+  animation-duration: 1.5s;
+}
+.container__menu__component.delay2 {
   animation-duration: 2s;
-  animation-delay: 0s;
 }
-
-.menu_delay_2 {
-  animation-delay: 0.1s;
+.container__menu__component.delay3 {
+  animation-duration: 2.5s;
 }
-
-.menu_delay_3 {
-  animation-delay: 0.2s;
+.container__menu__component.delay4 {
+  animation-duration: 3s;
 }
-
-.menu_delay_4 {
-  animation-delay: 0.3s;
+.container__menu__component.delay5 {
+  animation-duration: 3.5s;
 }
-
-.menu_delay_5 {
-  animation-delay: 0.4s;
+.container__menu__component.delay6 {
+  animation-duration: 4s;
 }
-
-.menu_delay_6 {
-  animation-delay: 0.5s;
+.container__menu__component.delay7 {
+  animation-duration: 4.5s;
 }
-
-.menu_delay_7 {
-  animation-delay: 0.6s;
+.container__menu__component.delay8 {
+  animation-duration: 5s;
 }
-
-.menu_delay_8 {
-  animation-delay: 0.7s;
-}
-
-.menu_delay_9 {
-  animation-delay: 0.8s;
+.container__menu__component.delay9 {
+  animation-duration: 5.5s;
 }
 
 .logo {
@@ -348,8 +391,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 15%;
-  padding-right: 45px;
+  width: 5%;
+  margin-top: 13px;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 60px;
 }
 
 .return .fas {
@@ -436,6 +482,9 @@ h4 {
 
 .container__menu__component {
   display: flex;
+  justify-content: flex-end;
+  width: 99%;
+  height: 60px;
   margin-bottom: 10px;
   margin-top: 10px;
   border-radius: 16px;
@@ -448,17 +497,23 @@ h4 {
   justify-content: flex-end;
   align-items: flex-end;
   padding: 14px;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .component__text {
+  display: block;
   width: 88%;
+  white-space: nowrap;
+  overflow: hidden;
   padding: 10px 10px 0px 10px;
 }
 
 .component__text h3 {
   font-size: 15px;
+}
+
+.component__text h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .container_button {
@@ -496,6 +551,19 @@ h4 {
   padding: 5px 0 2px 0px;
 }
 
+@media (min-width: 700px) {
+  .logo {
+    justify-content: center;
+  }
+
+  .maincard {
+    display: flex;
+  }
+
+  .container {
+    width: 33%;
+  }
+}
 body {
   margin: 0;
 }

@@ -58,9 +58,15 @@
 .card_img {
   width: 100%;
   height: 250px;
-  background-image: url(intro.jpg);
+
   background-color: #cccccc;
   background-size: cover;
+  &.menupic1 {
+    background-image: url(intro.jpg);
+  }
+  &.menupic2 {
+    background-image: url(intro2.jpg);
+  }
 }
 .card_img img {
   object-fit: cover;
@@ -86,41 +92,46 @@
 
 @keyframes fadein {
   0% {
-    transform: scale(0);
+    position: relative;
+    top: 10px;
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    position: relative;
+    top: 0px;
+    opacity: 1;
   }
 }
 
 .container__menu__component {
   opacity: 1;
   animation-name: fadein;
-  animation-duration: 2s;
-  animation-delay: 0s;
-}
-.menu_delay_2 {
-  animation-delay: 0.1s;
-}
-.menu_delay_3 {
-  animation-delay: 0.2s;
-}
-.menu_delay_4 {
-  animation-delay: 0.3s;
-}
-
-.menu_delay_5 {
-  animation-delay: 0.4s;
-}
-.menu_delay_6 {
-  animation-delay: 0.5s;
-}
-.menu_delay_7 {
-  animation-delay: 0.6s;
-}
-.menu_delay_8 {
-  animation-delay: 0.7s;
-}
-.menu_delay_9 {
-  animation-delay: 0.8s;
+  animation-duration: 1s;
+  &.delay1 {
+    animation-duration: 1.5s;
+  }
+  &.delay2 {
+    animation-duration: 2s;
+  }
+  &.delay3 {
+    animation-duration: 2.5s;
+  }
+  &.delay4 {
+    animation-duration: 3s;
+  }
+  &.delay5 {
+    animation-duration: 3.5s;
+  }
+  &.delay6 {
+    animation-duration: 4s;
+  }
+  &.delay7 {
+    animation-duration: 4.5s;
+  }
+  &.delay8 {
+    animation-duration: 5s;
+  }
+  &.delay9 {
+    animation-duration: 5.5s;
+  }
 }

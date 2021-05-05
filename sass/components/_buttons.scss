@@ -6,8 +6,7 @@
   border-radius: 20px;
   background: linear-gradient(#ff79da, #9356dc);
 }
-.container__btn {
-}
+
 .icon_footer {
   margin-right: 10px;
 }
@@ -53,23 +52,55 @@
   height: 25px;
   border-radius: 50px;
   background-color: white;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
 }
 .component__button {
   display: flex;
 
   background-color: #99e2d0;
   border-radius: 0px 15px 15px 0px;
-  width: 80px;
+  width: 0px;
   height: 60px;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+.container__menu__component {
+  &:hover .component__button {
+    animation: validbutton;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  &:hover .button__icon {
+    transform: rotate(0);
+  }
+}
+@keyframes validbutton {
+  0% {
+    width: 0;
+    display: none;
+  }
+
+  100% {
+    width: 80px;
+    display: block;
+  }
+}
+.component__text .component__price .container__menu__component {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .logo_full {
   display: none;
   position: relative;
   bottom: 19px;
 
-  color: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(#ff79da, #9356dc);
 }
 
 .logo_empty:active .logo_full {
