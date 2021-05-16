@@ -89,6 +89,7 @@ a {
 }
 
 .maincard__intro h2 {
+  margin-top: 15px;
   font-family: "Shrikhand", cursive;
 }
 
@@ -126,12 +127,31 @@ ul {
   font-size: 14px;
 }
 
+.logo_full {
+  font-size: 28px;
+}
+
+.logo_empty {
+  font-size: 25px;
+}
+
 .container__btn a {
   color: white;
   text-decoration: none;
   padding: 15px 35px 15px 35px;
   border-radius: 20px;
   background: linear-gradient(#ff79da, #9356dc);
+  background-clip: padding-box;
+  box-shadow: 0 0px 5px rgba(41, 30, 30, 0.3), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+.container__btn a:hover {
+  filter: contrast(120%);
+  animation-duration: 2s;
+  box-shadow: 0 0px 10px rgba(41, 30, 30, 0.3), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.container__btn {
+  z-index: 1;
 }
 
 .icon_footer {
@@ -223,14 +243,43 @@ ul {
 }
 
 .logo_full {
-  display: none;
-  position: relative;
-  bottom: 19px;
-  background: linear-gradient(#ff79da, #9356dc);
+  display: block;
+  position: absolute;
+  bottom: 11px;
+  left: 29px;
+  width: 30px;
+  height: 30px;
 }
 
-.logo_empty:active .logo_full {
-  display: block;
+.couleur {
+  background: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo_empty:hover .logo_full {
+  background: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition-duration: 0.5s;
+}
+
+.card__bottom__button {
+  width: 30px;
+  height: 30px;
+  text-align: end;
+  margin-top: 20px;
+  border: 0 solid transparent;
+  padding: 5px 30px 10px 30px;
+  position: relative;
+}
+
+.container__menu__button {
+  color: blueviolet;
 }
 
 .container__column__card {
@@ -248,19 +297,13 @@ ul {
 }
 
 .text_cards {
-  width: 80%;
+  width: 75%;
   height: 30%;
-  padding: 10px;
+  padding: 15px;
 }
 
 .text_cards p {
   margin: 0;
-}
-
-.card__bottom__button {
-  width: 5%;
-  text-align: end;
-  margin-top: 25px;
 }
 
 .text_cards h3 {
@@ -293,8 +336,11 @@ ul {
 }
 
 .maincard__intro {
+  display: flex;
   margin-top: -50px;
-  padding: 20px;
+  margin-right: 20px;
+  padding-left: 20px;
+  justify-content: space-between;
 }
 
 .card_img {
@@ -304,10 +350,16 @@ ul {
   background-size: cover;
 }
 .card_img.menupic1 {
-  background-image: url(intro.jpg);
+  background-image: url(../img/intro.jpg);
 }
 .card_img.menupic2 {
-  background-image: url(intro2.jpg);
+  background-image: url(../img/intro2.jpg);
+}
+.card_img.menupic3 {
+  background-image: url(../img/intro3.jpg);
+}
+.card_img.menupic4 {
+  background-image: url(../img/intro4.jpg);
 }
 
 .card_img img {
@@ -380,7 +432,9 @@ ul {
 
 .logo {
   display: flex;
-  width: 73%;
+  width: 100%;
+  justify-content: center;
+  margin-right: 25px;
 }
 
 header {
@@ -389,13 +443,9 @@ header {
 
 .return {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 5%;
-  margin-top: 13px;
-  margin-left: 10px;
-  padding-left: 10px;
-  padding-right: 60px;
+  width: 20px;
+  height: 20px;
+  padding: 15px 0px 0 15px;
 }
 
 .return .fas {
@@ -418,6 +468,9 @@ header {
 
 /* main */
 .container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   text-align: center;
   background-color: whitesmoke;
@@ -426,26 +479,25 @@ header {
   margin-bottom: 50px;
 }
 .container1 .container__info {
-  width: 70%;
-  margin-left: 70px;
-  margin-bottom: 50px;
+  width: 90%;
   margin-top: 30px;
 }
 .container1 .container__info h3 {
-  width: 90%;
+  width: 100%;
   font-size: 23px;
 }
 .container1 .container__info h4 {
-  width: 115%;
+  width: 100%;
   font-size: 15px;
   margin-top: 10px;
   font-weight: normal;
-  margin-left: -32px;
+  margin-left: 0;
 }
 
 /* restaurants */
 .container {
-  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .container h4 {
@@ -465,8 +517,16 @@ header {
 }
 
 .container__menu {
+  width: 100%;
   margin-left: 10px;
   margin-right: 10px;
+}
+.container__menu.indexmenu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .container__menu__component h3,
@@ -483,7 +543,7 @@ h4 {
 .container__menu__component {
   display: flex;
   justify-content: flex-end;
-  width: 99%;
+  width: 95%;
   height: 60px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -501,7 +561,7 @@ h4 {
 
 .component__text {
   display: block;
-  width: 88%;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   padding: 10px 10px 0px 10px;
@@ -509,6 +569,8 @@ h4 {
 
 .component__text h3 {
   font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .component__text h4 {
@@ -517,10 +579,8 @@ h4 {
 }
 
 .container_button {
-  background-color: whitesmoke;
   display: flex;
   justify-content: center;
-  height: 100px;
 }
 
 /* menu1 page */
@@ -530,7 +590,7 @@ h4 {
 
 .container__menu__button {
   display: flex;
-  width: 90%;
+  width: 320px;
   padding-top: 15px;
   padding-bottom: 13px;
   color: black;
@@ -539,6 +599,11 @@ h4 {
   margin: 20px 10px 0 20px;
   border-radius: 20px;
   box-shadow: 0 0px 5px rgba(41, 30, 30, 0.3), 0 5px 5px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  z-index: 1;
+}
+.container__menu__button:hover {
+  background-color: #f2eafb;
 }
 
 /* footer */
@@ -558,10 +623,59 @@ h4 {
 
   .maincard {
     display: flex;
+    flex-wrap: wrap;
+  }
+  .maincard__intro {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .containner {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container__column {
+    justify-content: center;
+  }
+
+  .container__column__card {
+    width: 370px;
+    height: 270px;
   }
 
   .container {
-    width: 33%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .container__menu_name {
+    width: 100%;
+  }
+
+  .container_button {
+    width: 100%;
+  }
+
+  .container_button {
+    justify-content: center;
+  }
+
+  .maincard__intro {
+    margin-top: 0;
+  }
+
+  .maincard {
+    border-radius: 0;
+  }
+
+  .container__column {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 body {

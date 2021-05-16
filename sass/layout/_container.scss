@@ -12,6 +12,9 @@
 }
 /* main */
 .container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   text-align: center;
   background-color: whitesmoke;
@@ -20,26 +23,26 @@
   margin-bottom: 50px;
 
   .container__info {
-    width: 70%;
-    margin-left: 70px;
-    margin-bottom: 50px;
+    width: 90%;
+
     margin-top: 30px;
   }
   .container__info h3 {
-    width: 90%;
+    width: 100%;
     font-size: 23px;
   }
   .container__info h4 {
-    width: 115%;
+    width: 100%;
     font-size: 15px;
     margin-top: 10px;
     font-weight: normal;
-    margin-left: -32px;
+    margin-left: 0;
   }
 }
 /* restaurants */
 .container {
-  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 .container h4 {
   font-size: 20px;
@@ -56,8 +59,16 @@
   border-top: 2px solid #99e2d0;
 }
 .container__menu {
+  width: 100%;
   margin-left: 10px;
   margin-right: 10px;
+  &.indexmenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 .container__menu__component h3,
 h4 {
@@ -71,7 +82,7 @@ h4 {
 .container__menu__component {
   display: flex;
   justify-content: flex-end;
-  width: 99%;
+  width: 95%;
   height: 60px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -88,7 +99,7 @@ h4 {
 }
 .component__text {
   display: block;
-  width: 88%;
+  width: 100%;
   white-space: nowrap;
 
   overflow: hidden;
@@ -96,17 +107,16 @@ h4 {
 }
 .component__text h3 {
   font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .component__text h4 {
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .container_button {
-  background-color: whitesmoke;
-
   display: flex;
   justify-content: center;
-  height: 100px;
 }
 
 /* menu1 page */
@@ -115,7 +125,7 @@ h4 {
 }
 .container__menu__button {
   display: flex;
-  width: 90%;
+  width: 320px;
   padding-top: 15px;
   padding-bottom: 13px;
   color: black;
@@ -124,6 +134,11 @@ h4 {
   margin: 20px 10px 0 20px;
   border-radius: 20px;
   box-shadow: 0 0px 5px rgb(41 30 30 / 30%), 0 5px 5px rgb(0 0 0 / 22%);
+  cursor: pointer;
+  z-index: 1;
+  &:hover {
+    background-color: #f2eafb;
+  }
 }
 
 /* footer */

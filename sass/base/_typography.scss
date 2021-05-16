@@ -10,6 +10,7 @@ a {
   color: black;
 }
 .maincard__intro h2 {
+  margin-top: 15px;
   font-family: "Shrikhand", cursive;
 }
 
@@ -38,4 +39,11 @@ ul {
 }
 .container__menu__button h3 {
   font-size: 14px;
+}
+
+.logo_full {
+  font-size: 28px;
+}
+.logo_empty {
+  font-size: 25px;
 }

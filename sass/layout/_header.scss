@@ -1,20 +1,19 @@
 .logo {
   display: flex;
-  width: 73%;
+  width: 100%;
+  justify-content: center;
+  margin-right: 25px;
 }
 header {
   display: flex;
 }
 .return {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 5%;
-  margin-top: 13px;
-  margin-left: 10px;
-  padding-left: 10px;
-  padding-right: 60px;
+  width: 20px;
+  height: 20px;
+  padding: 15px 0px 0 15px;
 }
+
 .return .fas {
   font-size: 20px;
 }

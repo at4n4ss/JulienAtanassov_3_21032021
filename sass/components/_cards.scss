@@ -12,18 +12,14 @@
   padding-bottom: 20px;
 }
 .text_cards {
-  width: 80%;
+  width: 75%;
   height: 30%;
-  padding: 10px;
+  padding: 15px;
 }
 .text_cards p {
   margin: 0;
 }
-.card__bottom__button {
-  width: 5%;
-  text-align: end;
-  margin-top: 25px;
-}
+
 .text_cards h3 {
   margin-bottom: 0px;
   margin-top: 0px;
@@ -52,8 +48,11 @@
 }
 
 .maincard__intro {
+  display: flex;
   margin-top: -50px;
-  padding: 20px;
+  margin-right: 20px;
+  padding-left: 20px;
+  justify-content: space-between;
 }
 .card_img {
   width: 100%;
@@ -62,12 +61,19 @@
   background-color: #cccccc;
   background-size: cover;
   &.menupic1 {
-    background-image: url(intro.jpg);
+    background-image: url(../img/intro.jpg);
   }
   &.menupic2 {
-    background-image: url(intro2.jpg);
+    background-image: url(../img/intro2.jpg);
+  }
+  &.menupic3 {
+    background-image: url(../img/intro3.jpg);
+  }
+  &.menupic4 {
+    background-image: url(../img/intro4.jpg);
   }
 }
+
 .card_img img {
   object-fit: cover;
   width: 100%;
@@ -88,6 +94,7 @@
 .container__column_card_bottom {
   position: relative;
 }
+
 /* animations cards menu */
 
 @keyframes fadein {

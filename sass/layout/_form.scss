@@ -4,8 +4,49 @@
   }
   .maincard {
     display: flex;
+    flex-wrap: wrap;
+    &__intro {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+    }
+  }
+  .containner {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .container__column {
+    justify-content: center;
+  }
+  .container__column__card {
+    width: 370px;
+    height: 270px;
   }
   .container {
-    width: 33%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .container__menu_name {
+    width: 100%;
+  }
+  .container_button {
+    width: 100%;
+  }
+  .container_button {
+    justify-content: center;
+  }
+  .maincard__intro {
+    margin-top: 0;
+  }
+  .maincard {
+    border-radius: 0;
+  }
+  .container__column {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
