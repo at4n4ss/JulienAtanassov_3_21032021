@@ -1,0 +1,183 @@
+/* Animation Loader spinner */
+@keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
+  50% {
+    opacity: 1;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top: 20px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+/* Animation coeur */
+.logo_full:hover {
+  animation-name: likebutton;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.logo_empty:hover {
+  background: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.logo_empty {
+}
+@keyframes likebutton {
+  0% {
+    background: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+  }
+
+  100% {
+    background: linear-gradient(#ff79da, #9356dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+  }
+}
+
+/* Animation Valid button */
+@keyframes validbutton {
+  0% {
+    width: 0;
+    display: none;
+  }
+
+  100% {
+    width: 80px;
+    display: block;
+  }
+}
+.component__text .component__price .container__menu__component {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.button__icon {
+  color: #99e2d0;
+  display: flex;
+  width: 25px;
+
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  border-radius: 50px;
+  background-color: white;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.component__button {
+  display: flex;
+  background-color: #99e2d0;
+  border-radius: 0px 15px 15px 0px;
+  width: 0px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+.container__menu__component {
+  &:hover .component__button {
+    animation: validbutton;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  &:hover .button__icon {
+    transform: rotate(0);
+  }
+}
+
+/* animations cards menu */
+
+@keyframes fadein {
+  0% {
+    position: relative;
+    top: 10px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.container__menu__component {
+  opacity: 1;
+  animation-name: fadein;
+  animation-duration: 1s;
+  &.delay1 {
+    animation-duration: 1.5s;
+  }
+  &.delay2 {
+    animation-duration: 2s;
+  }
+  &.delay3 {
+    animation-duration: 2.5s;
+  }
+  &.delay4 {
+    animation-duration: 3s;
+  }
+  &.delay5 {
+    animation-duration: 3.5s;
+  }
+  &.delay6 {
+    animation-duration: 4s;
+  }
+  &.delay7 {
+    animation-duration: 4.5s;
+  }
+  &.delay8 {
+    animation-duration: 5s;
+  }
+  &.delay9 {
+    animation-duration: 5.5s;
+  }
+}

@@ -29,11 +29,11 @@
   }
   .container__info h3 {
     width: 100%;
-    font-size: 23px;
+    font-size: 29px;
   }
   .container__info h4 {
     width: 100%;
-    font-size: 15px;
+    font-size: 17px;
     margin-top: 10px;
     font-weight: normal;
     margin-left: 0;
@@ -41,7 +41,6 @@
 }
 /* restaurants */
 .container {
-  margin-bottom: 20px;
   margin-top: 50px;
 }
 .container h4 {
@@ -141,14 +140,16 @@ h4 {
   }
 }
 
+.container__menu__button:hover .icon {
+  color: #9356dc;
+}
 /* footer */
 
 .container_footer {
   padding: 30px;
   background-color: #353535;
 }
-.footer__logo {
-}
+
 .footer__column li {
   padding: 5px 0 2px 0px;
 }

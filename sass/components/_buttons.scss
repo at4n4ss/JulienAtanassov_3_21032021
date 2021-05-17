@@ -53,64 +53,12 @@
   font-weight: normal;
 }
 
-.button__icon {
-  color: #99e2d0;
-  display: flex;
-  width: 25px;
+/* Coeur */
 
-  align-items: center;
-  justify-content: center;
-  height: 25px;
-  border-radius: 50px;
-  background-color: white;
-  transform: rotate(180deg);
-  transition-duration: 0.5s;
-}
-.component__button {
-  display: flex;
-
-  background-color: #99e2d0;
-  border-radius: 0px 15px 15px 0px;
-  width: 0px;
-  height: 60px;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  transition-duration: 0.5s;
-}
-.container__menu__component {
-  &:hover .component__button {
-    animation: validbutton;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-  }
-  &:hover .button__icon {
-    transform: rotate(0);
-  }
-}
-@keyframes validbutton {
-  0% {
-    width: 0;
-    display: none;
-  }
-
-  100% {
-    width: 80px;
-    display: block;
-  }
-}
-.component__text .component__price .container__menu__component {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
 .logo_full {
-  display: block;
   position: absolute;
-  bottom: 11px;
-  left: 29px;
+  bottom: 12px;
+  left: 30px;
   width: 30px;
   height: 30px;
 }
@@ -120,17 +68,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-weight: bold;
   cursor: pointer;
-}
-
-.logo_empty:hover .logo_full {
-  background: linear-gradient(#ff79da, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-
-  transition-duration: 0.5s;
 }
 
 .card__bottom__button {
@@ -141,8 +79,4 @@
   border: 0 solid transparent;
   padding: 5px 30px 10px 30px;
   position: relative;
-}
-
-.container__menu__button {
-  color: blueviolet;
 }

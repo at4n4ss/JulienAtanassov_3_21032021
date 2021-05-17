@@ -1,3 +1,182 @@
+/* Animation Loader spinner */
+@keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
+  50% {
+    opacity: 1;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top: 20px;
+}
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+/* Animation coeur */
+.logo_full:hover {
+  animation-name: likebutton;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.logo_empty:hover {
+  background: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes likebutton {
+  0% {
+    background: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+  }
+  100% {
+    background: linear-gradient(#ff79da, #9356dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+  }
+}
+/* Animation Valid button */
+@keyframes validbutton {
+  0% {
+    width: 0;
+    display: none;
+  }
+  100% {
+    width: 80px;
+    display: block;
+  }
+}
+.component__text .component__price .container__menu__component {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.button__icon {
+  color: #99e2d0;
+  display: flex;
+  width: 25px;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  border-radius: 50px;
+  background-color: white;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
+.component__button {
+  display: flex;
+  background-color: #99e2d0;
+  border-radius: 0px 15px 15px 0px;
+  width: 0px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+
+.container__menu__component:hover .component__button {
+  animation: validbutton;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.container__menu__component:hover .button__icon {
+  transform: rotate(0);
+}
+
+/* animations cards menu */
+@keyframes fadein {
+  0% {
+    position: relative;
+    top: 10px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+  }
+}
+.container__menu__component {
+  opacity: 1;
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+.container__menu__component.delay1 {
+  animation-duration: 1.5s;
+}
+.container__menu__component.delay2 {
+  animation-duration: 2s;
+}
+.container__menu__component.delay3 {
+  animation-duration: 2.5s;
+}
+.container__menu__component.delay4 {
+  animation-duration: 3s;
+}
+.container__menu__component.delay5 {
+  animation-duration: 3.5s;
+}
+.container__menu__component.delay6 {
+  animation-duration: 4s;
+}
+.container__menu__component.delay7 {
+  animation-duration: 4.5s;
+}
+.container__menu__component.delay8 {
+  animation-duration: 5s;
+}
+.container__menu__component.delay9 {
+  animation-duration: 5.5s;
+}
+
 .container_loader {
   position: fixed;
   display: flex;
@@ -6,7 +185,7 @@
   width: 100%;
   height: 100%;
   background-color: #353535;
-  z-index: 0;
+  z-index: -1;
   animation-name: loader;
   animation-duration: 3s;
   opacity: 0;
@@ -85,7 +264,7 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 .maincard__intro h2 {
@@ -190,63 +369,11 @@ ul {
   font-weight: normal;
 }
 
-.button__icon {
-  color: #99e2d0;
-  display: flex;
-  width: 25px;
-  align-items: center;
-  justify-content: center;
-  height: 25px;
-  border-radius: 50px;
-  background-color: white;
-  transform: rotate(180deg);
-  transition-duration: 0.5s;
-}
-
-.component__button {
-  display: flex;
-  background-color: #99e2d0;
-  border-radius: 0px 15px 15px 0px;
-  width: 0px;
-  height: 60px;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  transition-duration: 0.5s;
-}
-
-.container__menu__component:hover .component__button {
-  animation: validbutton;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
-.container__menu__component:hover .button__icon {
-  transform: rotate(0);
-}
-
-@keyframes validbutton {
-  0% {
-    width: 0;
-    display: none;
-  }
-  100% {
-    width: 80px;
-    display: block;
-  }
-}
-.component__text .component__price .container__menu__component {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
+/* Coeur */
 .logo_full {
-  display: block;
   position: absolute;
-  bottom: 11px;
-  left: 29px;
+  bottom: 12px;
+  left: 30px;
   width: 30px;
   height: 30px;
 }
@@ -256,16 +383,7 @@ ul {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-weight: bold;
   cursor: pointer;
-}
-
-.logo_empty:hover .logo_full {
-  background: linear-gradient(#ff79da, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition-duration: 0.5s;
 }
 
 .card__bottom__button {
@@ -276,10 +394,6 @@ ul {
   border: 0 solid transparent;
   padding: 5px 30px 10px 30px;
   position: relative;
-}
-
-.container__menu__button {
-  color: blueviolet;
 }
 
 .container__column__card {
@@ -384,52 +498,6 @@ ul {
   position: relative;
 }
 
-/* animations cards menu */
-@keyframes fadein {
-  0% {
-    position: relative;
-    top: 10px;
-    opacity: 0;
-  }
-  100% {
-    position: relative;
-    top: 0px;
-    opacity: 1;
-  }
-}
-.container__menu__component {
-  opacity: 1;
-  animation-name: fadein;
-  animation-duration: 1s;
-}
-.container__menu__component.delay1 {
-  animation-duration: 1.5s;
-}
-.container__menu__component.delay2 {
-  animation-duration: 2s;
-}
-.container__menu__component.delay3 {
-  animation-duration: 2.5s;
-}
-.container__menu__component.delay4 {
-  animation-duration: 3s;
-}
-.container__menu__component.delay5 {
-  animation-duration: 3.5s;
-}
-.container__menu__component.delay6 {
-  animation-duration: 4s;
-}
-.container__menu__component.delay7 {
-  animation-duration: 4.5s;
-}
-.container__menu__component.delay8 {
-  animation-duration: 5s;
-}
-.container__menu__component.delay9 {
-  animation-duration: 5.5s;
-}
-
 .logo {
   display: flex;
   width: 100%;
@@ -484,11 +552,11 @@ header {
 }
 .container1 .container__info h3 {
   width: 100%;
-  font-size: 23px;
+  font-size: 29px;
 }
 .container1 .container__info h4 {
   width: 100%;
-  font-size: 15px;
+  font-size: 17px;
   margin-top: 10px;
   font-weight: normal;
   margin-left: 0;
@@ -496,7 +564,6 @@ header {
 
 /* restaurants */
 .container {
-  margin-bottom: 20px;
   margin-top: 50px;
 }
 
@@ -606,6 +673,10 @@ h4 {
   background-color: #f2eafb;
 }
 
+.container__menu__button:hover .icon {
+  color: #9356dc;
+}
+
 /* footer */
 .container_footer {
   padding: 30px;
@@ -616,7 +687,7 @@ h4 {
   padding: 5px 0 2px 0px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .logo {
     justify-content: center;
   }
@@ -642,7 +713,7 @@ h4 {
   }
 
   .container__column__card {
-    width: 370px;
+    width: 360px;
     height: 270px;
   }
 
