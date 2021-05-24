@@ -3,8 +3,7 @@
   margin: 0;
   padding: 0;
 }
-::placeholder {
-}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -29,6 +28,7 @@ ul {
 .footer__logo h3 {
   font-family: "Shrikhand", cursive;
   color: white;
+  font-size: normal;
 }
 .spinner_logo p {
   font-family: "Shrikhand", cursive;
